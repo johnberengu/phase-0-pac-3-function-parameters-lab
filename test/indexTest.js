@@ -1,5 +1,27 @@
 require ( './root.js' );
 
+function introduction(name){
+  return `Hi, my name is ${name}.`
+}
+console.log(introduction("Aki"));
+
+function introductionWithLanguage(name, language){
+  return `Hi, my name is ${name} and I am learning to program in ${language}.`
+}
+console.log(introductionWithLanguage("Aki","Ember.js."));
+
+function introductionWithLanguageOptional(name, language="JavaScript"){
+  return `Hi, my name is ${name} and I am learning to program in ${language}.`
+}
+console.log(introductionWithLanguageOptional("Gracie"));
+
+function introductionWithLanguageOptional(name, language="JavaScript"){
+  return `Hi, my name is ${name} and I am learning to program in ${language}.`
+}
+console.log(introductionWithLanguageOptional("Gracie","Python"));
+
+
+
 
 describe('introduction(name)', function() {
   it('takes in an argument of a name and returns a phrase with that name using string interpolation', function() {
